@@ -10,76 +10,84 @@
 </head>
 <body class="bg-gray-900 text-white font-sans">
 
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-4 bg-gray-800">
+    <h1 class="text-xl font-bold">Mohamed Herzallah</h1>
+    <div class="space-x-4">
+      <a href="#projects" class="hover:text-blue-400">Projects</a>
+      <a href="#contact" class="hover:text-blue-400">Contact</a>
+    </div>
+  </nav>
+
   <!-- Hero -->
-  <section class="text-center py-24" data-aos="fade-up">
+  <section class="text-center py-20" data-aos="fade-up">
+    <img src="photo.png" alt="Profile" class="w-32 h-32 mx-auto rounded-full mb-6 border-4 border-blue-500 object-cover">
     <h1 class="text-5xl font-bold mb-4">Mohamed Herzallah</h1>
     <p class="text-xl text-blue-400 mb-6">Laravel Backend Developer</p>
     <p class="max-w-xl mx-auto text-gray-400">
       I build scalable, secure backend systems with clean architecture, REST APIs, and real-world business logic.
     </p>
-    <a href="https://github.com/mohamedherzallah" target="_blank" class="inline-block mt-6 bg-blue-500 px-6 py-3 rounded-xl hover:bg-blue-600 transition">
-      View GitHub
-    </a>
+    <div class="mt-6 space-x-4">
+      <a href="https://github.com/mohamedherzallah" target="_blank" class="bg-blue-500 px-6 py-3 rounded-xl hover:bg-blue-600 transition">GitHub</a>
+      <a href="#contact" class="border border-gray-500 px-6 py-3 rounded-xl hover:bg-gray-700 transition">Contact Me</a>
+    </div>
   </section>
 
   <!-- About -->
-  <section class="py-20 px-6 max-w-4xl mx-auto" data-aos="fade-right">
+  <section class="py-16 px-6 max-w-4xl mx-auto" data-aos="fade-right">
     <h2 class="text-3xl font-semibold mb-6">About Me</h2>
     <p class="text-gray-300 leading-relaxed">
-      I am a Computer Science graduate and backend developer specializing in Laravel. I focus on building RESTful APIs, handling complex database relationships, and implementing secure authentication and authorization systems.
+      I am a Computer Science graduate and backend developer specializing in Laravel. I build RESTful APIs, design scalable databases, and implement secure authentication systems.
     </p>
   </section>
 
+  <!-- Services -->
+  <section class="py-16 px-6 bg-gray-800" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-10 text-center">What I Do</h2>
+    <div class="grid md:grid-cols-3 gap-6 text-center">
+      <div class="bg-gray-900 p-6 rounded-xl">API Development</div>
+      <div class="bg-gray-900 p-6 rounded-xl">Database Design</div>
+      <div class="bg-gray-900 p-6 rounded-xl">Authentication Systems</div>
+    </div>
+  </section>
+
   <!-- Projects -->
-  <section class="py-20 px-6 bg-gray-800">
+  <section id="projects" class="py-20 px-6">
     <h2 class="text-3xl font-semibold mb-10 text-center" data-aos="fade-up">Projects</h2>
 
     <div class="grid md:grid-cols-3 gap-8">
 
-      <div class="bg-gray-900 p-6 rounded-2xl shadow hover:scale-105 transition" data-aos="zoom-in">
+      <div class="bg-gray-800 p-6 rounded-2xl hover:scale-105 transition" data-aos="zoom-in">
         <h3 class="text-xl font-bold mb-2">Kafel System</h3>
         <p class="text-gray-400 mb-4">Orphan sponsorship platform with roles, payments, and tracking system.</p>
         <p class="text-sm text-gray-500 mb-3">Laravel • MySQL • RBAC • REST API</p>
-        <a href="https://github.com/mohamedherzallah/kafel" target="_blank" class="text-blue-400">View Project →</a>
+        <a href="https://github.com/mohamedherzallah/kafel" target="_blank" class="text-blue-400">View →</a>
       </div>
 
-      <div class="bg-gray-900 p-6 rounded-2xl shadow hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="100">
+      <div class="bg-gray-800 p-6 rounded-2xl hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="100">
         <h3 class="text-xl font-bold mb-2">Pharmacy Backend</h3>
         <p class="text-gray-400 mb-4">API system for managing medicines, inventory, and orders.</p>
-        <p class="text-sm text-gray-500 mb-3">Laravel • API • Authentication</p>
-        <a href="https://github.com/mohamedherzallah/pharmacy" target="_blank" class="text-blue-400">View Project →</a>
+        <p class="text-sm text-gray-500 mb-3">Laravel • API • Auth</p>
+        <a href="https://github.com/mohamedherzallah/pharmacy" target="_blank" class="text-blue-400">View →</a>
       </div>
 
-      <div class="bg-gray-900 p-6 rounded-2xl shadow hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="200">
+      <div class="bg-gray-800 p-6 rounded-2xl hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="200">
         <h3 class="text-xl font-bold mb-2">Pharmacy Frontend</h3>
-        <p class="text-gray-400 mb-4">Frontend connected to backend API for pharmacy workflows.</p>
-        <p class="text-sm text-gray-500 mb-3">API Integration • UI</p>
-        <a href="https://github.com/mohamedherzallah/pharmacy-frontend" target="_blank" class="text-blue-400">View Project →</a>
+        <p class="text-gray-400 mb-4">Frontend connected to backend API.</p>
+        <p class="text-sm text-gray-500 mb-3">API Integration</p>
+        <a href="https://github.com/mohamedherzallah/pharmacy-frontend" target="_blank" class="text-blue-400">View →</a>
       </div>
 
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section class="py-20 px-6 max-w-4xl mx-auto" data-aos="fade-left">
-    <h2 class="text-3xl font-semibold mb-6">Skills</h2>
-    <div class="flex flex-wrap gap-4">
-      <span class="bg-gray-800 px-4 py-2 rounded-xl">Laravel</span>
-      <span class="bg-gray-800 px-4 py-2 rounded-xl">PHP</span>
-      <span class="bg-gray-800 px-4 py-2 rounded-xl">MySQL</span>
-      <span class="bg-gray-800 px-4 py-2 rounded-xl">REST APIs</span>
-      <span class="bg-gray-800 px-4 py-2 rounded-xl">Authentication</span>
-      <span class="bg-gray-800 px-4 py-2 rounded-xl">Git</span>
     </div>
   </section>
 
   <!-- Contact -->
-  <section class="py-20 text-center bg-gray-800" data-aos="fade-up">
+  <section id="contact" class="py-20 text-center bg-gray-800" data-aos="fade-up">
     <h2 class="text-3xl font-semibold mb-4">Contact</h2>
     <p class="text-gray-400 mb-2">
       GitHub: <a href="https://github.com/mohamedherzallah" class="text-blue-400">github.com/mohamedherzallah</a>
     </p>
-    <p class="text-gray-400">Email: mohamedyousefhr@example.com</p>
+    <p class="text-gray-400">Email: your-email@example.com</p>
   </section>
 
   <script>
